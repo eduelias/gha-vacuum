@@ -1,25 +1,17 @@
 name: Vacuum OpenAPI Spec linter
 description: This is an OpenAPI spec linter using vacuum.
 inputs:
-  rules-path: 
-    description: 'Which vacuum rule-set to use'
-    required: false
-  files-path: 
-    description: "Path for the files to be linted"
+  cmd:
+    description: "Vacuum command, see https://quobix.com/vacuum/"
     required: true
-    default: openapi.yaml
 
 runs:
   using: "composite"
   steps:
     - name: Install Vacuum
-      run: curl -fsSL https://quobix.com/scripts/install_vacuum.sh | sh
+      run: curl -fsSL https://quobix.com/scripts/install_vacuum.sh | sh > /dev/null
       shell: bash
     - name: Run OpenAPI Linter
       run: |
-        if [[ -z "${{ inputs.rules-path }}" ]]; then
-          vacuum lint -s ${{ inputs.files-path }}
-        else
-          vacuum lint -s ${{ inputs.files-path }} -r ${{ inputs.rules-path }}
-        fi
+        ${{ inputs.cmd }}
       shell: bash
