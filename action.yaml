@@ -17,7 +17,7 @@ runs:
       shell: bash
     - name: Run OpenAPI Linter
       run: |
-        if [[ -z "${{ inputs.rules-path }}"" ]]; then
+        if [[ -z "${{ inputs.rules-path }}" ]]; then
           vacuum lint -s ${{ inputs.files-path }}
         else
           vacuum lint -s ${{ inputs.files-path }} -r ${{ inputs.rules-path }}
