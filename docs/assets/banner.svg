@@ -1,0 +1,47 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="gha-vacuum promotional banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0E0C"/>
+      <stop offset="0.55" stop-color="#0D1712"/>
+      <stop offset="1" stop-color="#16281F"/>
+    </linearGradient>
+    <style>
+      .kicker { font: 700 22px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #4ADE80; letter-spacing: 4px; }
+      .title  { font: 700 72px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #FFFFFF; }
+      .sub    { font: 600 32px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #CFE3D8; }
+      .bullet { font: 400 26px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #E8F0EB; }
+      .footl  { font: 700 22px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #8FAE9E; }
+      .footr  { font: 400 22px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #7E8F87; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <text class="kicker" x="56" y="80">GITHUB ACTION · API QUALITY</text>
+
+  <!-- decorative spec-with-checks top-right -->
+  <g transform="translate(985,36)" stroke="#4ADE80" stroke-width="2.5" fill="none">
+    <rect x="0" y="0" rx="8" ry="8" width="96" height="120"/>
+    <path d="M16 26 h40 M16 50 h64 M16 74 h52" stroke-opacity="0.45"/>
+    <circle cx="122" cy="96" r="26"/>
+    <path d="M110 96 l8 8 l16 -18" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text class="title" x="52" y="165">gha-vacuum</text>
+
+  <text class="sub" x="56" y="225">OpenAPI linting in your CI pipeline —</text>
+  <text class="sub" x="56" y="268">powered by the blazing-fast vacuum linter.</text>
+
+  <g fill="#4ADE80">
+    <circle cx="66" cy="352" r="7"/>
+    <circle cx="66" cy="406" r="7"/>
+    <circle cx="66" cy="460" r="7"/>
+  </g>
+  <text class="bullet" x="92" y="361">Drop-in GitHub Action — one step in your workflow</text>
+  <text class="bullet" x="92" y="415">Fails the build on OpenAPI spec violations, before review</text>
+  <text class="bullet" x="92" y="469">Keeps API contracts honest on every push</text>
+
+  <line x1="56" y1="540" x2="1144" y2="540" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="2"/>
+  <text class="footl" x="56" y="588">uses: eduelias/gha-vacuum</text>
+  <text class="footr" x="1144" y="588" text-anchor="end">MIT · wraps the vacuum OpenAPI linter</text>
+</svg>
